@@ -153,12 +153,3 @@ flutter pub get
 flutter run
 ```
 
-## Things worth trying next
-
-- Make `ProfileDelegate` take the avatar size as a constructor field, and
-  return `true` from `shouldRelayout` when it changes — a good way to see
-  `performLayout` actually re-run.
-- Swap the fixed `340 × 300` container for `LayoutBuilder`, so the delegate
-  receives a real dynamic `size` instead of one you already know — this is
-  where `CustomMultiChildLayout` earns its keep over hardcoded `Positioned`
-  values.
